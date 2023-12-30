@@ -7,14 +7,14 @@ terraform {
       version = "=3.0.0"
     }
   }
-
-  backend "azurerm" {
+}
+/*   backend "azurerm" {
     resource_group_name  = "test-rg"
     storage_account_name = "tfstate8rkt6"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
-}
+} */
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
